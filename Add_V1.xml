@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet LastModified="2020-07-01T08:53:56.007Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://www.siemens.com/simatic-s7-opcua</Uri>
+        <Uri>http://plantsim.vsma.org</Uri>
+        <Uri>http://www.siemens.com/AutomationSkills</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://www.siemens.com/simatic-s7-opcua" PublicationDate="2020-04-02T00:00:00Z" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05"/>
+        </Model>
+        <Model ModelUri="http://plantsim.vsma.org" PublicationDate="2020-04-02T00:00:00Z" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05"/>
+            <RequiredModel ModelUri="http://www.siemens.com/simatic-s7-opcua" PublicationDate="2020-04-02T00:00:00Z" Version="1.00"/>
+            <RequiredModel ModelUri="http://www.siemens.com/AutomationSkills" PublicationDate="2019-06-28T00:00:00Z" Version="1.00"/>
+        </Model>
+        <Model ModelUri="http://www.siemens.com/AutomationSkills" PublicationDate="2019-06-28T00:00:00Z" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Int16">i=4</Alias>
+        <Alias Alias="Double">i=11</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="IdType">i=256</Alias>
+        <Alias Alias="NumericRange">i=291</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <si:Generator Product="SiOME" Edition="Standard" Version="2.0.4"/>
+        </Extension>
+    </Extensions>
+    <UAObject SymbolicName="http___www_siemens_com_simatic_s7_opcua" NodeId="ns=1;i=1000" BrowseName="1:http://www.siemens.com/simatic-s7-opcua">
+        <DisplayName>http://www.siemens.com/simatic-s7-opcua</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=1001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=1000">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=1002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2020-04-02T00:00:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://www.siemens.com/simatic-s7-opcua</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1004" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ValueRank="1" NodeId="ns=1;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ValueRank="1" NodeId="ns=1;i=1006" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=1;i=1008" ArrayDimensions="0" BrowseName="DefaultRolePermissions">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="http___plantsim_vsma_org" NodeId="ns=2;i=1000" BrowseName="2:http://plantsim.vsma.org">
+        <DisplayName>http://plantsim.vsma.org</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=1001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=2;i=1000">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=2;i=1002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=2;i=1000">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2020-04-02T00:00:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=1003" BrowseName="NamespaceUri" ParentNodeId="ns=2;i=1000">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://plantsim.vsma.org</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=1004" BrowseName="NamespaceVersion" ParentNodeId="ns=2;i=1000">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ValueRank="1" NodeId="ns=2;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=2;i=1000">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ValueRank="1" NodeId="ns=2;i=1006" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=2;i=1000">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=1007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=2;i=1000">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=2;i=1008" ArrayDimensions="0" BrowseName="DefaultRolePermissions">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Request&quot;" BrowseName="1:Request">
+        <DisplayName>Request</DisplayName>
+        <Description>The base type for all object nodes.</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Add_DB"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=85</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Result&quot;" BrowseName="1:Result">
+        <DisplayName>Result</DisplayName>
+        <Description>The base type for all object nodes.</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Add_DB"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Int16" NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Result&quot;.&quot;ErrorId&quot;" BrowseName="1:ErrorId" ParentNodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Result&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ErrorId</DisplayName>
+        <Description>ErrorId</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Insert_DB"."Result"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Int16>0</uax:Int16>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;RequestProvided&quot;" BrowseName="1:RequestProvided" ParentNodeId="ns=2;s=&quot;Skill_Insert_DB&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>RequestProvided</DisplayName>
+        <Description>RequestProvided</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Add_DB"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;ResultAcknowledge&quot;" BrowseName="1:ResultAcknowledge" ParentNodeId="ns=2;s=&quot;Skill_Insert_DB&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ResultAcknowledge</DisplayName>
+        <Description>ResultAcknowledge</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Add_DB"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=2;s=&quot;Skill_Add_DB&quot;" BrowseName="1:Skill_Add_DB">
+        <DisplayName>Skill_Add_DB</DisplayName>
+        <Description>The base type for all object nodes.</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=3;i=1032</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Double" NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Result&quot;.&quot;valueOut&quot;" BrowseName="1:valueOut" ParentNodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Result&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>valueOut</DisplayName>
+        <Description>valueOut</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Insert_DB"."Result"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Request&quot;.&quot;value1&quot;" BrowseName="1:value1" ParentNodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Request&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>value1</DisplayName>
+        <Description>value1</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Insert_DB"."Request"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Request&quot;.&quot;value2&quot;" BrowseName="1:value2" ParentNodeId="ns=2;s=&quot;Skill_Insert_DB&quot;.&quot;Request&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>value2</DisplayName>
+        <Description>value2</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s="Skill_Insert_DB"."Request"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=3;i=1032" BrowseName="3:SkillObjectType">
+        <DisplayName>SkillObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject NodeId="ns=3;i=1280" BrowseName="3:Invokation">
+        <DisplayName>Invokation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1032</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=3;i=1281" BrowseName="3:Description">
+        <DisplayName>Description</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1032</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=3;i=1322" BrowseName="3:SkillStateMachine">
+        <DisplayName>SkillStateMachine</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1032</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="String" NodeId="ns=3;i=1005" BrowseName="3:Version" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Version</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1032</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
