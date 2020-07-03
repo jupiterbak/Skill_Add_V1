@@ -74,7 +74,7 @@ class Skill {
 
         // Set the skill results flags
         self.xRequestProvided_node.setValueFromSource({ dataType: opcua.DataType.Boolean, value: false }, opcua.StatusCodes.Good, new Date());
-        self.xResultAcknowledge_node.setValueFromSource({ dataType: opcua.DataType.Boolean, value: true }, opcua.StatusCodes.Good, new Date());
+        self.xResultAcknowledge_node.setValueFromSource({ dataType: opcua.DataType.Boolean, value: false }, opcua.StatusCodes.Good, new Date());
     }
 
     start() {
@@ -102,7 +102,7 @@ class Skill {
 
                     // reset xRequestProvided
                     self.xRequestProvided_node.setValueFromSource({ dataType: opcua.DataType.Boolean, value: false }, opcua.StatusCodes.Good, new Date());
-                    self.xResultAcknowledge_node.setValueFromSource({ dataType: opcua.DataType.Boolean, value: false }, opcua.StatusCodes.Good, new Date());     
+                    self.xResultAcknowledge_node.setValueFromSource({ dataType: opcua.DataType.Boolean, value: true }, opcua.StatusCodes.Good, new Date());     
                 }, 1000);
 
             }
